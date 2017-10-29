@@ -3,16 +3,16 @@ package com.mybatis.single;
 import com.google.gson.Gson;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
 
 import java.util.LinkedHashMap;
-import java.util.Map;
 
 
 /**
  * Created by yunkai on 2017/10/11.
  */
+@Component
 public class UserSingleton {
 
     private static Logger logger = LoggerFactory.getLogger(UserSingleton.class);
@@ -23,7 +23,7 @@ public class UserSingleton {
 
     private UserSingleton(){}
 
-    public static String getUserSingleton(String key){
+    public static String getUserSingletonValue(String key){
         if(userSingleton == null){
             synchronized (UserSingleton.class){
                 if(userSingleton == null){

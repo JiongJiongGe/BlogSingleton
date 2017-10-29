@@ -2,6 +2,7 @@ package com.mybatis.controller;
 
 
 import com.mybatis.service.SingleApplyService;
+import com.mybatis.service.redis.RedisServiceI;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,4 +28,5 @@ public class SingletonController {
        logger.info("userName = {}", value);
        return value;
     }
+
 }

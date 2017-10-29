@@ -12,7 +12,6 @@ import java.util.LinkedHashMap;
 /**
  * Created by yunkai on 2017/10/11.
  */
-@Component
 public class UserSingleton {
 
     private static Logger logger = LoggerFactory.getLogger(UserSingleton.class);
